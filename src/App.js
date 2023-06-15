@@ -3,21 +3,22 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <form>
+        <select name="select" >
+          <option>India</option>
+          <option>Australia</option>
+          <option>Bermuda</option>
+          <option>Canada</option>
+          <option>Cameroon</option>
+          <option>Denmark</option>
+          <option>France</option>
+          <option>Finland</option>
+          <option>Germany</option>
+
+        </select>
+      </form>
+
     </div>
   );
 }

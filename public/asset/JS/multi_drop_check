@@ -1,0 +1,55 @@
+// import React, { useState } from 'react';
+
+// const Multiselect = ({ value, readonly }) => {
+//   const [isOpen, setIsOpen] = useState(false);
+//   const [selectedValues, setSelectedValues] = useState(value);
+
+//   const handleCheckboxChange = (event) => {
+//     const { value: checkboxValue, checked } = event.target;
+//     if (checked) {
+//       setSelectedValues((prevValues) => [...prevValues, checkboxValue]);
+//     } else {
+//       setSelectedValues((prevValues) =>
+//         prevValues.filter((value) => value !== checkboxValue)
+//       );
+//     }
+//   };
+
+//   return (
+//     <div className="multiselect">
+//       <div className="selected-items">
+//         {selectedValues.map((value) => (
+//           <div className="item" key={value}>
+//             {value}
+//           </div>
+//         ))}
+//       </div>
+//       <div className={`dropdown ${isOpen ? 'open' : ''}`}>
+//         <input
+//           type="text"
+//           className="search-input"
+//           placeholder="Search..."
+//           onFocus={() => setIsOpen(true)}
+//           onBlur={() => setIsOpen(false)}
+//         />
+//         <div className="options">
+//           {[1, 2, 3].map((optionValue) => (
+//             <div className="option" key={optionValue}>
+//               <input
+//                 type="checkbox"
+//                 id={`option${optionValue}`}
+//                 value={optionValue}
+//                 checked={selectedValues.includes(optionValue)}
+//                 onChange={handleCheckboxChange}
+//                 disabled={readonly}
+//               />
+//               <label htmlFor={`option${optionValue}`}>{optionValue}</label>
+//             </div>
+//           ))}
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default Multiselect;
